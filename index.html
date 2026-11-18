@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oscar 2026 – Colégio Piedade</title>
+  <meta name="description" content="Jantar de Confraternização Oscar 2026 – Inscrição e Indicações">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== CABEÇALHO ===================== -->
+  <header class="hero">
+    <div class="curtain curtain-left"></div>
+    <div class="curtain curtain-right"></div>
+    <div class="bokeh"></div>
+
+    <!-- Estatueta dourada (SVG) -->
+    <svg class="statue" viewBox="0 0 120 300" aria-hidden="true">
+      <defs>
+        <linearGradient id="gold" x1="0" x2="1" y1="0" y2="0">
+          <stop offset="0" stop-color="#8a5a12"/>
+          <stop offset=".35" stop-color="#f7d77a"/>
+          <stop offset=".55" stop-color="#fff1b8"/>
+          <stop offset=".75" stop-color="#d9a73a"/>
+          <stop offset="1" stop-color="#7a4d0e"/>
+        </linearGradient>
+      </defs>
+      <g fill="url(#gold)">
+        <ellipse cx="60" cy="28" rx="15" ry="18"/>
+        <path d="M44 46 Q60 40 76 46 L84 70 Q86 92 78 120 L74 200 Q70 230 66 245 L54 245 Q50 230 46 200 L42 120 Q34 92 36 70 Z"/>
+        <path d="M36 78 Q60 96 84 78 L84 92 Q60 110 36 92 Z" opacity=".85"/>
+        <rect x="38" y="245" width="44" height="12" rx="2"/>
+        <rect x="30" y="257" width="60" height="16" rx="2"/>
+        <rect x="24" y="273" width="72" height="22" rx="3"/>
+      </g>
+    </svg>
+
+    <div class="hero-content">
+      <div class="logo">
+        <!-- Para usar o logo oficial, troque este bloco por: <img src="logo.png" alt="Colégio Piedade"> -->
+        <span class="logo-mark">CP</span>
+        <span class="logo-text">Colégio<br>Piedade</span>
+      </div>
+      <h1><span class="laurel">❦</span> OSCAR 2026 <span class="laurel flip">❦</span></h1>
+      <h2>Jantar de Confraternização</h2>
+      <div class="badge">Inscrição e Indicações</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <p class="intro">
+      Confirme sua presença no nosso Jantar de Confraternização e indique colegas
+      que se destacaram ao longo do ano para concorrerem às categorias do Oscar 2026.
+    </p>
+
+    <form id="oscarForm" novalidate>
+      <div class="grid">
+
+        <!-- ============ COLUNA ESQUERDA ============ -->
+        <div class="col-left">
+
+          <!-- 1. Seus dados -->
+          <section class="card">
+            <div class="card-header">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+              <h3>1. Seus dados</h3>
+            </div>
+            <div class="card-body">
+              <label for="nome">Nome completo <span class="req">*</span></label>
+              <input type="text" id="nome" name="nome" required autocomplete="name">
+
+              <label for="setor">Setor/Área <span class="req">*</span></label>
+              <select id="setor" name="setor" required>
+                <option value="" disabled selected>Selecione...</option>
+                <option>Direção</option>
+                <option>Coordenação Pedagógica</option>
+                <option>Educação Infantil</option>
+                <option>Ensino Fundamental I</option>
+                <option>Ensino Fundamental II</option>
+                <option>Ensino Médio</option>
+                <option>Secretaria</option>
+                <option>Administrativo / Financeiro</option>
+                <option>Tecnologia</option>
+                <option>Biblioteca</option>
+                <option>Portaria / Segurança</option>
+                <option>Serviços Gerais / Manutenção</option>
+                <option>Cantina / Nutrição</option>
+                <option>Outro</option>
+              </select>
+            </div>
+          </section>
+
+          <!-- 2. Presença -->
+          <section class="card">
+            <div class="card-header">
+              <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M7.5 14h.01M12 14h.01M16.5 14h.01M7.5 17.5h.01M12 17.5h.01"/></svg>
+              <h3>2. Presença no evento</h3>
+            </div>
+            <div class="card-body">
+              <p class="question">Você participará do Jantar de Confraternização? <span class="req">*</span></p>
+              <label class="radio">
+                <input type="radio" name="presenca" value="Sim" required>
+                <span class="dot"></span> Sim, estarei presente.
+              </label>
+              <label class="radio">
+                <input type="radio" name="presenca" value="Não">
+                <span class="dot"></span> Não poderei participar.
+              </label>
+            </div>
+          </section>
+
+          <!-- 3. Info indicações -->
+          <section class="card card-info">
+            <div class="info-title">
+              <svg viewBox="0 0 24 24"><path d="M3 9V6h18v3a3 3 0 0 0 0 6v3H3v-3a3 3 0 0 0 0-6z"/><path d="m12 9 1 2 2 .3-1.5 1.4.4 2.1-1.9-1-1.9 1 .4-2.1L9 11.3l2-.3z"/></svg>
+              <h3>3. Indicações – Oscar 2026</h3>
+            </div>
+            <p>
+              Indique um(a) colega para cada categoria.
+              Você pode indicar pessoas de qualquer setor.
+              As indicações serão analisadas pela comissão do evento.
+            </p>
+          </section>
+        </div>
+
+        <!-- ============ COLUNA DIREITA ============ -->
+        <section class="card col-right">
+          <div class="card-header">
+            <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+            <h3>4. Indique os seus candidatos</h3>
+          </div>
+
+          <ul class="categories">
+            <li>
+              <div class="icon"><svg viewBox="0 0 24 24"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3"/><path d="M12 14v4M8 21h8M9 18h6"/></svg></div>
+              <div class="text">
+                <h4>Destaque do Ano</h4>
+                <p>Profissional que se destacou pelo comprometimento, entrega e resultados.</p>
+              </div>
+              <input type="text" name="destaque_do_ano" placeholder="Nome do(a) indicado(a)">
+            </li>
+            <li>
+              <div class="icon"><svg viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.9-3.9a3 3 0 0 0-4.2 0l-.9.9a1 1 0 1 1-3-3l2.8-2.8a5.8 5.8 0 0 1 7.1-.9l.5.3a2 2 0 0 0 1.4.3L21 3.7"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg></div>
+              <div class="text">
+                <h4>Espírito de Equipe</h4>
+                <p>Quem colabora, apoia e fortalece o trabalho coletivo.</p>
+              </div>
+              <input type="text" name="espirito_de_equipe" placeholder="Nome do(a) indicado(a)">
+            </li>
+            <li>
+              <div class="icon"><svg viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></svg></div>
+              <div class="text">
+                <h4>Cuidado que Inspira</h4>
+                <p>Demonstra atenção, empatia e acolhimento no dia a dia.</p>
+              </div>
+              <input type="text" name="cuidado_que_inspira" placeholder="Nome do(a) indicado(a)">
+            </li>
+            <li>
+              <div class="icon"><svg viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5A6 6 0 1 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"/><path d="M9 18h6M10 22h4"/></svg></div>
+              <div class="text">
+                <h4>Solução Criativa</h4>
+                <p>Traz ideias, inovações e soluções para os desafios.</p>
+              </div>
+              <input type="text" name="solucao_criativa" placeholder="Nome do(a) indicado(a)">
+            </li>
+            <li>
+              <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 20v-3M9 20v-6M14 20v-9M19 20V8"/><path d="m3 13 6-5 4 3 7-7"/><path d="M16 4h4v4"/></svg></div>
+              <div class="text">
+                <h4>Superação</h4>
+                <p>Enfrentou desafios com determinação, resiliência e atitude positiva.</p>
+              </div>
+              <input type="text" name="superacao" placeholder="Nome do(a) indicado(a)">
+            </li>
+            <li>
+              <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="3"/><circle cx="5" cy="9" r="2.3"/><circle cx="19" cy="9" r="2.3"/><path d="M6.5 20v-2a5.5 5.5 0 0 1 11 0v2z"/><path d="M1.5 19v-1.5A3.5 3.5 0 0 1 5 14M22.5 19v-1.5A3.5 3.5 0 0 0 19 14"/></svg></div>
+              <div class="text">
+                <h4>Impacto na Comunidade Escolar</h4>
+                <p>Contribui de forma significativa para a experiência de alunos e famílias.</p>
+              </div>
+              <input type="text" name="impacto_comunidade" placeholder="Nome do(a) indicado(a)">
+            </li>
+            <li>
+              <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 21V11"/><path d="M12 11C12 6 8 4 4 4c0 5 3 7 8 7z"/><path d="M12 13c0-4 3-6 8-6 0 4-3 6-8 6z"/></svg></div>
+              <div class="text">
+                <h4>Talento em Desenvolvimento</h4>
+                <p>Mostrou grande evolução, aprendizado e protagonismo ao longo do ano.</p>
+              </div>
+              <input type="text" name="talento_desenvolvimento" placeholder="Nome do(a) indicado(a)">
+            </li>
+            <li>
+              <div class="icon"><svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div>
+              <div class="text">
+                <h4>Escolha da Equipe</h4>
+                <p>Aquele(a) que, na sua opinião, merece um reconhecimento especial.</p>
+              </div>
+              <input type="text" name="escolha_da_equipe" placeholder="Nome do(a) indicado(a)">
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <p id="formError" class="form-error" role="alert"></p>
+
+      <div class="actions">
+        <button type="submit" id="submitBtn" class="btn-submit">
+          <svg viewBox="0 0 24 24"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg>
+          <span>Enviar respostas</span>
+        </button>
+      </div>
+    </form>
+
+    <!-- Mensagem de sucesso -->
+    <div id="successBox" class="success" hidden>
+      <div class="success-icon">🏆</div>
+      <h3>Respostas enviadas com sucesso!</h3>
+      <p>Obrigado por participar do Oscar 2026 do Colégio Piedade.</p>
+      <button type="button" id="newResponse" class="btn-link">Enviar outra resposta</button>
+    </div>
+  </main>
+
+  <footer>Colégio Piedade · Oscar 2026</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
