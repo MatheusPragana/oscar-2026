@@ -2,7 +2,7 @@
 // COLE AQUI A URL DO SEU APP DA WEB DO GOOGLE APPS SCRIPT
 // (veja o passo a passo no README.md)
 // ==========================================================
-const SCRIPT_URL = "COLE_AQUI_A_URL_DO_APPS_SCRIPT";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyCpAaaOj7GMDk2nEDDkw4KMio8x1rSnMG1x8S7yy8DcfbLqqr97o1b2-VCZQ5R7svN7g/exec";
 
 const form = document.getElementById("oscarForm");
 const btn = document.getElementById("submitBtn");
