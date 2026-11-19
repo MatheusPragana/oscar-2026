@@ -12,14 +12,16 @@ const COLUNAS = [
   ["Nome completo", "nome"],
   ["Setor/Área", "setor"],
   ["Presença no jantar", "presenca"],
-  ["Destaque do Ano", "destaque_do_ano"],
   ["Espírito de Equipe", "espirito_de_equipe"],
-  ["Cuidado que Inspira", "cuidado_que_inspira"],
-  ["Solução Criativa", "solucao_criativa"],
-  ["Superação", "superacao"],
-  ["Impacto na Comunidade Escolar", "impacto_comunidade"],
-  ["Talento em Desenvolvimento", "talento_desenvolvimento"],
-  ["Escolha da Equipe", "escolha_da_equipe"],
+  ["Coração de Ouro", "coracao_de_ouro"],
+  ["Mente Brilhante", "mente_brilhante"],
+  ["Mestre dos Improvisos", "mestre_dos_improvisos"],
+  ["Orgulho Piedade", "orgulho_piedade"],
+  ["Sorriso que Contagia", "sorriso_que_contagia"],
+  ["Rei ou Rainha da Resenha", "rei_rainha_da_resenha"],
+  ["Radar Ligado", "radar_ligado"],
+  ["Estrela do Look", "estrela_do_look"],
+  ["Personalidade do Ano", "personalidade_do_ano"],
 ];
 
 function doPost(e) {
