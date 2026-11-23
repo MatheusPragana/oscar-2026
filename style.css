@@ -289,6 +289,22 @@ input[type="text"]:focus, select:focus {
 }
 .info-title svg { color: var(--gold); width: 46px; height: 46px; transform: rotate(-30deg); }
 .info-title h3 { font-size: 1.45rem; color: var(--wine); }
+.rules-title {
+  font-family: "Cinzel", serif;
+  color: var(--wine);
+  font-size: 1rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+.rules {
+  margin: 0;
+  padding-left: 1.4em;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.rules li { margin-bottom: 6px; }
+.rules li::marker { color: var(--gold); font-weight: 800; }
 
 /* ===================== CATEGORIAS ===================== */
 .categories { list-style: none; padding: 6px 8px 10px; }

@@ -36,6 +36,19 @@ form.addEventListener("submit", async (e) => {
     return;
   }
 
+  // Regra 2: não é permitido indicar a si mesmo
+  const norm = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
+  const proprioNome = norm(form.nome.value);
+  const autoIndicacoes = [...form.querySelectorAll(".categories input")].filter(
+    (el) => el.value.trim() && norm(el.value) === proprioNome
+  );
+  if (autoIndicacoes.length) {
+    autoIndicacoes.forEach((el) => el.classList.add("invalid"));
+    errorBox.textContent = "Não é permitido indicar a si mesmo. Troque o nome nas categorias destacadas.";
+    autoIndicacoes[0].focus();
+    return;
+  }
+
   if (SCRIPT_URL.startsWith("COLE_AQUI")) {
     errorBox.textContent = "Formulário ainda não configurado: defina a SCRIPT_URL no arquivo script.js.";
     return;
